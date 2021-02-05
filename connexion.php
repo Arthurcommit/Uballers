@@ -24,7 +24,7 @@ if(isset($_POST['connexion'])) { // si le bouton "Connexion" est appuyé
             $BDD['host'] = "localhost";
             $BDD['user'] = "root";
             $BDD['pass'] = "";
-            $BDD['db'] = "test";
+            $BDD['db'] = "nom_de_la_base_de_donnees";
             $mysqli = mysqli_connect($BDD['host'], $BDD['user'], $BDD['pass'], $BDD['db']);
             //on vérifie que la connexion s'effectue correctement:
             if(!$mysqli){
