@@ -111,8 +111,8 @@ if($AfficherFormulaire==1){
         </div>
         <div id="form2" class="fb-header">
             Password<br>
-            <input placeholder="Password" type="password" name="mdp"/><br /> <!--  Balise avec propriétés sans contenu -->
-            Forgotten your password?
+            <input placeholder="Password" type="password" name="mdp"/><br /> 
+            Informations de compte oubliées ?
         </div>
     </div>
     <input type="submit" class="submit1" name="connexion" value="Connexion">
