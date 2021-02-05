@@ -47,7 +47,7 @@ if(isset($_POST['bouton'])){
         echo "Le mois de naissance doit être renseigné.";
         exit;
     }elseif(empty($_POST['annee'])){
-        echo "L'année de naissance doit être renseignée.";dba_sync
+        echo "L'année de naissance doit être renseignée.";
         exit;
     } elseif(!preg_match("#^[a-zÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïðòóôõöùúûüýÿ]+$#",$_POST['firstname'])){
         echo "Le prénom doit être renseigné en lettres minuscules sans accents, sans caractères spéciaux.";
