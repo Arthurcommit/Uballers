@@ -6,7 +6,7 @@ $BDD = array();
 $BDD['host'] = "localhost";
 $BDD['user'] = "root";
 $BDD['pass'] = "";
-$BDD['db'] = "test";
+$BDD['db'] = "nom_de_la_base_de_donnees";
 $mysqli = mysqli_connect($BDD['host'], $BDD['user'], $BDD['pass'], $BDD['db']);
 
 if(!$mysqli) {
@@ -83,7 +83,6 @@ if(isset($_POST['bouton'])){
             $jour = str_pad($_POST['jour'], 2, '0', STR_PAD_LEFT);
             $mois = str_pad($_POST['mois'], 2, '0', STR_PAD_LEFT);
             $ddn=$_POST["annee"]."-".$mois."-".$jour;
-            print_r($_POST);
             if(!mysqli_query($mysqli,"INSERT INTO membres SET firstname='".$_POST['firstname']."', lastname='".$_POST['lastname']."', mail='".$_POST['mail']."', confirm_mail='".$_POST['confirm_mail']."', ddn='".$ddn."' , sex='".$_POST['sex']."' ,mdp='".md5($_POST['mdp'])."'")){//on crypte le mot de passe avec la fonction propre à PHP: md5()
                 echo "Une erreur s'est produite: ".mysqli_error($mysqli);
             } else {
@@ -97,14 +96,9 @@ if(isset($_POST['bouton'])){
 
     
 
-
-
 if($AfficherFormulaire==1){ 
     ?>
-    <!-- Les balises <input> sont les champs du formulaire-->
 
-	
-    
     <br />
     <link type="text/css" rel="stylesheet" href="style.css" />
 
