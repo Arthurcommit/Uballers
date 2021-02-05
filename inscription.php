@@ -184,9 +184,9 @@ if($AfficherFormulaire==1){
         </div>
     </div>  
 </form>
-<!--<script src="test.js"></script>  
+<script src="test.js"></script>  
 
  
-    <?php
+<?php
 }
 ?>  
