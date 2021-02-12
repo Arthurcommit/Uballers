@@ -126,11 +126,15 @@ if($AfficherFormulaire==1){
 	    <div id="intro3" class="fb-body">C'est gratuit (et ça le restera toujours)</div>
 	    <div id="form3" class="fb-body">
             <div> 
+                <div>
                 <input placeholder="Prénom" type="text" id="firstname" name="firstname" required>
                 <input placeholder="Nom de famille" type="text" id="lastname" name="lastname" required>
-                <br /><span id="missprenom"></span>
-                <span id="missnom"></span>
-            </div>  
+                </div>
+                <div id="nomprenom"> 
+                    <div id="missprenom"> </div> 
+                    <div id="missnom"> </div> 
+                </div>
+            </div>   
             <input placeholder="Email" id="mail" type="text" name="mail" required><div id="missmail"></div>
             <input placeholder="Confirmer votre email" type="text" id="confirm_mail" name="confirm_mail" required><div id="missconfirm_mail"></div>
             <input placeholder="Nouveau mot de passe" type="password" id="mdp" name="mdp" required><div id="missmdp"></div>
