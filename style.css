@@ -172,3 +172,13 @@
 	color:blue;
 	height:60px;
 }
+#nomprenom{
+	display:flex;
+}
+#missprenom{
+	width: 200px;
+}
+#missnom{
+	width: 200px;
+	padding-left: 5px;
+}
